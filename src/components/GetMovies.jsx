@@ -12,7 +12,7 @@ function GetMovies() {
       setLoading(true);
 
       await axios
-        .get("http://localhost:3000/api/movies")
+        .get("https://movie-app-wsmt.onrender.com/api/movies")
         .then((response) => {
           setMovies(response.data);
         })
@@ -28,10 +28,12 @@ function GetMovies() {
   // delete movie
   async function deleteMovie(id) {
     try {
-      await axios.delete(`http://localhost:3000/api/movies/${id}`);
+      await axios.delete(
+        `https://movie-app-wsmt.onrender.com/api/movies/${id}`
+      );
 
       setMovies(movies.filter((movie) => movie.id !== id));
-      alert("Success: Book deleted!");
+      alert("Success: Deleted!");
     } catch (err) {
       console.error(err.message);
     }

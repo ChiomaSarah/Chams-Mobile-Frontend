@@ -32,7 +32,7 @@ function AddMovie() {
         genre: movie.genre,
       };
 
-      await axios.post("http://localhost:3000/api/movies", body);
+      await axios.post("https://movie-app-wsmt.onrender.com/api/movies", body);
 
       alert("Success: Added!");
       window.location = "/add-movie";

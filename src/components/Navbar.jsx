@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark ">
       <a className="navbar-brand text-light" href="/#">
-        Chams Mobile Test
+        Chamsmobile Test
       </a>
       <button
         className="navbar-toggler bg-light"

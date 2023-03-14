@@ -19,7 +19,10 @@ function UpdateMovie({ movie }) {
         year: year,
       };
 
-      await axios.patch(`http://localhost:3000/api/movies/${id}`, body);
+      await axios.patch(
+        `https://movie-app-wsmt.onrender.com/api/movies/${id}`,
+        body
+      );
 
       alert("Success: Updated!");
       window.location = "/movies";
